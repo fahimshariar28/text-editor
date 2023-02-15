@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor Box</title>
+    <script
+      src="https://kit.fontawesome.com/ee7c6d396f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="w-9/12 mx-auto bg-blue-300 mt-10">
+      <h2 class="text-3xl p-3">Enter Your Text Here</h2>
+      <div class="grid md:grid-cols-3 m-5 p-3 border-2">
+        <div>
+          <button id="bold-btn" class="md:ml-2 lg:ml-3">
+            <i class="fa-solid fa-bold"></i>
+          </button>
+          <button id="italic-btn" class="md:ml-2 lg:ml-3">
+            <i class="fa-solid fa-italic"></i>
+          </button>
+          <button id="underline-btn" class="md:ml-2 lg:ml-3">
+            <i class="fa-solid fa-underline"></i>
+          </button>
+        </div>
+        <div>
+          <button id="left-btn" class="md:ml-2 lg:ml-3">
+            <i class="fa-solid fa-align-left"></i>
+          </button>
+          <button id="center-btn" class="md:ml-2 lg:ml-3">
+            <i class="fa-solid fa-align-center"></i>
+          </button>
+          <button id="right-btn" class="md:ml-2 lg:ml-3">
+            <i class="fa-solid fa-align-right"></i>
+          </button>
+          <button id="justify-btn" class="md:ml-2 lg:ml-3">
+            <i class="fa-solid fa-align-justify"></i>
+          </button>
+        </div>
+        <div>
+          <button id="case" class="md:ml-2 lg:ml-3"><b>Aa</b></i></button>
+          <input
+            id="font-size"
+            class="md:ml-2 lg:ml-3"
+            type="number"
+            value="14"
+            min="1"
+            max="100"
+          />
+          <input class="md:ml-2 lg:ml-3" type="color" name="" id="text-color" />
+        </div>
+      </div>
+      <div id="" class="w-9/12 mx-auto mt-5 p-3">
+        <textarea
+          name="" class="w-full h-96"
+          id="text"
+          cols="100"
+          rows="20"
+        ></textarea>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
